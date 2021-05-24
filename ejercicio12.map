@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.12  C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm Mon May 24 01:24:27 2021
+AVRASM ver. 2.1.12  C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm Mon May 24 01:30:35 2021
 
 
 EQU  SIGNATURE_000 0000001e
@@ -604,4 +604,4 @@ CSEG onda         00000027
 CSEG config_io    0000001b
 CSEG fin          00000018
 CSEG contar       00000033
-CSEG stop         00000037
+CSEG stop         00000038

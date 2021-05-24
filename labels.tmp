@@ -25,6 +25,6 @@
   <config_io><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>26</LINE></config_io>
   <fin><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>22</LINE></fin>
   <contar><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>53</LINE></contar>
-  <stop><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>59</LINE></stop>
+  <stop><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>60</LINE></stop>
  </LABELS>
 </ASSEMBLER_INFO>

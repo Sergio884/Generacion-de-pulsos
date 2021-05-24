@@ -30,7 +30,7 @@ config_io:
 	out portb,aux
 	ldi aux,1; 0000 0001
 	out timsk,aux; toie0
-	ldi aux2,101
+	ldi aux2,100
 	out tcnt0,aux2
 	ldi aux,$20; 0010 0000
 	out gicr,aux
@@ -46,11 +46,12 @@ onda:
 	com aux
 	out porta,aux
 	inc cont
-	cpi cont,239
+	cpi cont,240
 	breq contar
 	reti
 
 contar:
+	clr cont
 	inc cont2
 	cpi cont2,10
 	breq stop
@@ -60,7 +61,6 @@ stop:
 	nop
 	ldi aux3, 0
 	out tccr0,aux3
-	clr cont
 	clr cont2
 	reti
 	
