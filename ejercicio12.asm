@@ -30,7 +30,7 @@ config_io:
 	out portb,aux
 	ldi aux,1; 0000 0001
 	out timsk,aux; toie0
-	ldi aux2,100
+	ldi aux2,101
 	out tcnt0,aux2
 	ldi aux,$20; 0010 0000
 	out gicr,aux
