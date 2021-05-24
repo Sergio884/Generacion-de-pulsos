@@ -4,14 +4,15 @@
 	.def auxH = r18
 	.def auxL = r19
 	.def cont =r20
+	.def cont2 =r22
+	.def aux3 = r21
 
 reset:
 	rjmp main
-	.org $008
-	rjmp onda
+	.org $009
 	rjmp onda
 	.org $012
-	rjmp onda2 ;vector INT2
+	rjmp onda ;vector INT2
 main:
 	ldi aux,low(RAMEND)
 	out spl,aux
@@ -26,38 +27,40 @@ config_io:
 	ldi cont,0
 	ser aux
 	out ddra,aux
-	out ddrc,aux
 	out portb,aux
-	ldi aux,1
-	out tccr0,aux
-	out tccr1b,aux
 	ldi aux,1; 0000 0001
 	out timsk,aux; toie0
-	ldi aux2,216
-	ldi auxH,$FC
-	ldi auxL,$23
+	ldi aux2,101
 	out tcnt0,aux2
-	out tcnt1H,auxH
-	out tcnt1L,auxL
 	ldi aux,$20; 0010 0000
 	out gicr,aux
 	sei
 	ret
 onda:
 	nop
+	nop
+	ldi aux,2
+	out tccr0,aux
 	out tcnt0,aux2
 	in aux,pina
 	com aux
 	out porta,aux
+	inc cont
+	cpi cont,239
+	breq contar
 	reti
-onda2:
-	ldi aux,4; 0000 0100
-	out timsk,aux; toie0
-	ldi auxH,$FC
-	ldi auxL,$23
-	out tcnt1H,auxH
-	out tcnt1L,auxL
-	in aux,pinc
-	com aux
-	out portc,aux
+
+contar:
+	inc cont2
+	cpi cont2,10
+	breq stop
 	reti
+
+stop:
+	nop
+	ldi aux3, 0
+	out tccr0,aux3
+	clr cont
+	clr cont2
+	reti
+	

@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.12</VERSION>
+ <DEVICE>ATmega8535</DEVICE>
+ <WORKING_DIR>C:\Users\Sergio\Desktop\6S\Micros\e12</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8535def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>10</LINE></reset>
+  <main><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>16</LINE></main>
+  <onda><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>39</LINE></onda>
+  <config_io><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>26</LINE></config_io>
+  <fin><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>22</LINE></fin>
+  <contar><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>53</LINE></contar>
+  <stop><FILE>C:\Users\Sergio\Desktop\6S\Micros\e12\ejercicio12.asm</FILE><LINE>59</LINE></stop>
+ </LABELS>
+</ASSEMBLER_INFO>
